@@ -1,0 +1,47 @@
+To determine the best approach for writing a JavaScript algorithm that reads a sentence character by character and calculates the length, number of words, and number of vowels, you should:
+
+Initialize Three Counters:
+
+A counter for the length of the sentence.
+A counter for the number of words.
+A counter for the number of vowels.
+Iterate Through Each Character:
+
+For each character, increment the length counter.
+Check if the character is a space to increment the word counter.
+Check if the character is a vowel to increment the vowel counter.
+Handle the Final Character:
+
+Since the sentence ends with a point, ensure that this character does not affect the word or vowel counters but is included in the length counter.
+Account for Edge Cases:
+
+Ensure the algorithm handles sentences with multiple spaces correctly.
+Validate that the sentence is not empty or improperly formatted.
+Step-by-Step Approach
+Initialize Counters:
+
+Set lengthCounter to 0.
+Set wordCounter to 1 (assuming the sentence has at least one word).
+Set vowelCounter to 0.
+Character Iteration:
+
+Loop through each character of the sentence.
+For each character:
+Increment lengthCounter.
+If the character is a space, increment wordCounter.
+If the character is a vowel (a, e, i, o, u in both uppercase and lowercase), increment vowelCounter.
+Final Character Handling:
+
+Ensure the final character (the period) is counted in the lengthCounter but does not affect the wordCounter or vowelCounter.
+By following these steps, the algorithm will accurately determine the length of the sentence, the number of words, and the number of vowels. This approach ensures that the sentence is processed character by character, as specified in the instructions, while maintaining the simplicity and efficiency required.
+
+
+Example:
+Input: "Hello, how are you today."
+Output:
+- Sentence Length: 24
+- Number of Words: 5
+- Number of Vowels: 7
+
+
+
